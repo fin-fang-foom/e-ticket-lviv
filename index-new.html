@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>еКвиток</title>
+	<meta charset="utf-8">
+	<meta name="description" content="сайт єдиного електронного квитка міста Львова">
+	<meta name="keywords" content="єдиний квиток, електронний квиток, Львів, квиток Львова, транспорт, львівська транспортна мережа, Lviv electronic ticket">
+	<meta name="author" content="Roman Yatskovych">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<!-- Nav -->
+	<header>
+		<nav class="cf">
+			<div id="branding">
+				<img src="img/lion.png" alt="Лев - логотип міста Львова">
+				<h1><span class="highlight">е</span>Квиток</h1>
+			</div>
+			<ul class="cf">
+				<li class="hide-on-small"><a href="#showcase">Нагору</a></li>
+				<li><a href="#information-ancor">Інфо</a></li>	
+				<li><a href="#questionnaire-ancor">Анкета</a></li>	
+				<li><a href="#news-ancor">Новини</a></li>
+				<li><a href="#faq-ancor">Питання</a></li>
+				<li><a href="#quote-ancor">Контакти</a></li>
+				<li onclick="openForm()"><a>Увійти</a></li>		
+			</ul>
+			<a href="#" id="openup">myTunes</a>
+		</nav>
+	</header>
+
+	<!-- Nav Button -->
+<!--
+	<div id="hero">
+  		<div class="wrapper">
+    		<h1>Hero</h1>
+  		</div>
+	</div>
+	<div id="scroll">
+  		<span class="arrow-bounce">&#8595;</span>
+	</div>
+-->
+
+	<div id="login-page" class="login-page">
+	    <div class="form">
+	      <form class="register-form">
+	        <input type="text" placeholder="ім'я"/>
+	        <input type="password" placeholder="пароль"/>
+	        <input type="text" placeholder="адреса email"/>
+	        <button onclick="closeForm()">створити</button>
+	        <p class="message">Вже зареєстровані? <a href="#">Заходьте</a></p>
+	      </form>
+	      <form class="login-form">
+	        <input type="text" placeholder="ім'я"/>
+	        <input type="password" placeholder="пароль"/>
+	        <button onclick="closeForm()">увійти</button>
+	        <p class="message">Не зареєстровані? <a href="#">Створіть акаунт</a></p>
+	      </form>
+	    </div>
+  	</div>
+
+	<!-- Showcase -->
+	<section><span id="showcase"></span>
+		<div id="welcome">
+			<div class="container">
+				<img src="img/leocard-orange.png">
+				<div class="info">
+					<h1>Єдиний Електронний Квиток у Львові</h1>
+					<p>Електронний квиток – спеціальний вид квитка, яким можна користуватись в усьому громадському транспорті, не передаючи щоразу кошти за проїзд та не очікуючи решти. Система оплати нагадує місячний проїзний абонемент, що здешевшує вартість проїзду.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Info -->
+	<section id="information"><span id="information-ancor"></span>
+		<hr><br>
+		<div class="container">
+			<div class="info">
+				<p>Мета інновації – спростити та зробити більш прозорою оплату за проїзд в автобусах, маршрутних таксі, тролейбусах, трамваях і метро.</p>
+				<p>Громадський транспорт обладнають валідаторами – спеціальними зчитувальними пристроями. Вони будуть розташовані біля дверей та у салоні транспорту. Пасажиру буде достатньо просто провести квитком, розміром із банківську картку, біля валідатора. Проїзд оплачений.</p>
+				<p>Люди з правом пільгового проїзду користуватимуться транспортом далі безкоштовно. Отримати електронний квиток вони теж матимуть можливість безкоштовно.</p>
+				<p>Е-квиток – можливість уникнути пільгової дискримінації.. «У мене в салоні і так багато пільговиків. Чекайте наступну маршрутку!» – типова ситуація, коли водій закриває двері прямо перед пенсіонером. Коли ж пільговик користуватиметься е-квитком, пристрій показуватиме, що в нього є право на проїзд. При цьому водій навіть не буде знати, пільговик це чи ні.</p>
+				<p>Контролери будуть оснащені спеціальними приладами, які зможуть зчитати і перевірити транспортні картки пасажирів.</p>
+				<p>Для гостей міста збережуть паперові квитки, які можна буде придбати у водія. Такі квитки будуть дорожчими.</p>
+				<p>Переваги впровадження електронного квитка:</p>
+				<ul>
+					<li>Для пасажирів – це передовсім зручність і комфорт. Єдиний квиток для всіх видів транспорту, в якому не треба буде передавати гроші за проїзд, а потім довго чекати на решту. Також це можливість уникнути пільгової дискримінації.</li>
+					<li>Е-квиток – це підвищення рівня безпеки на дорозі. Водій тепер зможе спокійно займатися своїм безпосереднім обов’язком, а не працювати паралельно кондуктором.</li>
+					<li>Для міста – це статистика. Облік реального пасажиропотоку, завдяки якому буде зрозуміло, хто, скільки, коли і куди перевіз. Це допоможе оптимізувати маршрути. Плюс вирішення вищезгаданої проблеми компенсацій за пільговий проїзд.</li>
+					<li>І чи не найголовніше – це боротьба з корупцією та виведення величезної суми готівки з «тіні».</li>
+				</ul>
+			</div>
+		</div>
+		<br><hr>
+	</section>
+
+	<!-- Questionnaire -->
+	<section id="questionnaire"><span id="questionnaire-ancor"></span>
+		<div class="container">
+			<h2>Присвятіть хвилину, щоб допомогти нам зробити квиток саме таким,<br>яким він потрібний львів'янам:</h2>
+			<form id="questionnaire-form">
+				<div class="question">
+					<label>Ім'я<input type="text" name="first-name" placeholder="Роман"></label><br>
+				</div>
+				<div class="question">
+				<label>Прізвище<input type="text" name="first-name" placeholder="Бондаренко"></label><br>
+				</div>
+				<div class="question">
+				<label>Електронна пошта<input type="email" name="questionnaire-email" placeholder="rbondarenko@gmail.com"></label><br>
+				</div>
+				<div class="question wide-question">
+				<label>Ваш вік:</label><br>
+				<div class="radio-buttons">
+					<input type="radio" class="radio" name="age" value="1"><label>10-25</label>
+					<input type="radio" class="radio" name="age" value="2"><label>26-40</label>
+					<input type="radio" class="radio" name="age" value="3"><label>41-60</label>
+					<input type="radio" class="radio" name="age" value="4"><label>61 чи більше</label>
+				</div>
+				</div>
+				<div class="question wide-question">
+				<label>Як ви ставитесь до перспективи впровадження Єдиного Квитка?</label>
+				<div class="radio-buttons">
+					<input type="radio" name="rate" class="radio" value="1"><label>Дуже погано</label>
+					<input type="radio" name="rate" class="radio" value="2"><label>Погано</label>
+					<input type="radio" name="rate" class="radio" value="3"><label>Нейтрально</label>
+					<input type="radio" name="rate" class="radio" value="4"><label>Добре</label>
+					<input type="radio" name="rate" class="radio" value="5"><label>Дуже добре</label>
+				</div><br>
+				</div>
+				<div class="question">
+				<textarea placeholder="Що, на вашу думку, є головним завданням квитка?"></textarea>
+				</div>
+				<div class="question">
+				<button name="questionnaire-submit">Відправити</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- News Section -->
+	<section id="section2"></section><span id="news-ancor"></span>
+	<div class="container">
+		<section id="news">
+			<article>
+				<img src="img/old.jpg">
+				<h3>Пільгові е-квитки у Львові почнуть роздавати на початку осені</h3>
+				<p>Пільговикам видаватимуть безкоштовні електронні квитки для проїзду у громадському транспорті Львова. Почнуть це робити наприкінці вересня. Обов’язкова умова для отримання — потрібно бути зареєстрованим у Єдиному реєстрі осіб, які мають право на пільгу. Тож львів’яни, що користувалися громадським транспортом на пільгових умовах, зможуть і надалі не платити за проїзд.</p>
+				<a href="https://zaxid.net/pilgovi_e_kvitki_u_lvovi_pochnut_rozdavati_na_pochatku_oseni_n1480225" target="_blank">Читати далі</a>
+			</article>
+			<article>
+				<img src="img/sms.jpg">
+				<h3>У львівському електротранспорті запровадили sms-оплату за проїзд</h3>
+				<p>Новий спосіб безготівкового розрахунку. Відтепер у Львові пасажири трамваїв та тролейбусів можуть оплатити за проїзд за допомогою звичайнісінької sms-ки.</p>
+				<a href="https://zaxid.net/u_lvivskomu_elektrotransporti_zaprovadili_sms_oplatu_za_proyizd_n1476914" target="_blank">Читати далі</a>
+			</article>
+			<article>
+				<img src="img/bluetooth.jpg">
+				<h3>У Львові вперше в Україні пропонують оплату проїзду в електротранспорті через Bluetooth</h3>
+				<p>У Львові з'явився ще один зручний спосіб придбати квиток без готівки для проїзду у трамваях і тролейбусах. Компанія JetBeep у співпраці з EasyPay презентували новий сервіс. Він працює через Bluetooth. Такий інноваційний продаж електронних квитків презентують в Україні вперше.</p>
+				<a href="https://zaxid.net/u_lvovi_vpershe_v_ukrayini_proponuyut_oplatu_proyizdu_v_elektrotransporti_cherez_bluetooth_n1476594" target="_blank">Читати далі</a>
+			</article>
+		</section>
+	</div>
+
+	<!-- FAQ -->
+	<div class="container"><span id="faq-ancor"></span>
+		<section id="faq">
+			<h1>Популярні запитання</h1>
+			<div class="faq-grid">
+				<p><b>Звичайні квитки залишаться чи від них повністю відмовляться?</b>Спочатку електронний квиток буде запроваджено тільки в електротранспорті; також навіть після введення єдиного квитка буде перехідний період тривалістю у кілька місяців, під час якого можна буде придбати звичайні квитки або ж використати запаси тих, що у Вас є.</p>
+				<p><b>Чи можна буде використовувати Е-квиток поза межами Львова?</b>Ні, картки будуть працювати лише на території міста.</p>
+				<p><b>Що станеться з придбаними поїздками, якщо карткою не користуватися понад рік?</b>На жаль, у такому разі невикористані поїздки “зіпсуються” та “згорять”, і їхню вартість неможливо буде повернути. Та варто лише 1 раз скористатися карткою на 364-й день з дати останньої поїздки, і термін дії картки знову подовжиться на цілий рік.</p>
+				<p><b>Чи можна буде здати картку назад та повернути кошти за неї?</b>Картка поверненню не підлягає. Вона залишиться з Вами на той випадок, якщо Вам знову знадобиться користуватися громадським транспортом у Києві.</p>
+				<p><b>Як можна заблокувати картку?</b>Втрачену картку можна заблокувати, просто подзвонивши на гарячу лінію. Придбані поїздки в жодному разі не загубляться, їх можна буде перенести на нову картку.</p>
+				<p><b>Як перевірити баланс на картці?</b>При кожному використанні на екрані валідатора буде видно, скільки поїздок залишилося на картці. Також буде можливість переглянути баланс в кабінеті користувача.</p>
+			</div>		
+		</section>
+	</div>	
+	<!-- Get A Quote -->
+	<section id="quote"><span id="quote-ancor"></span>
+		<h2>Є ідея, залишились питання чи просто<br>хочеться побажати натхнення розробникам?</h2>
+		<br>
+		<h3>Напишіть Команді Квитка:</h3>
+		<form id="quote-form">
+			<input type="email" name="quote-email" placeholder="Наприклад, your.email@gmail.com">
+			<textarea placeholder=""></textarea>
+			<button name="quote-submit">Відправити</button>
+		</form>
+	</section>
+
+	<!-- Footer -->
+		<footer>
+			<p>Роман Яцкович, Copyright &copy; 2019</p>
+		</footer>
+	<!-- Including JS libraries -->
+	<script
+	src="https://code.jquery.com/jquery-3.4.0.min.js"
+	integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+	crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
